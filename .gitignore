@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+<<<<<<< HEAD
+=======
+
+# project
+app/reviews/*.*
+app/static/plots/*.*
+>>>>>>> aac459b611dfbcaa35759cf0268ebce050a75da7
