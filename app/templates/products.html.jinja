@@ -1,6 +1,8 @@
 {% extends "layout.html.jinja" %}
 {% block content %}
-    {% for product in products %}
-        <a href="{{url_for('product', product_id=product)}}">{{product}}</a>
+    <ul class="list-group">
+        {% for product in products %}
+        
     {% endfor %}
+    </ul>
 {% endblock %}
