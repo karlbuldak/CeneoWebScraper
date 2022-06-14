@@ -16,7 +16,21 @@ class Product:
         self.average_score = average_score
 
     def __str__(self):
-        return self.product_name
+        return(f'{self.product_id}, {self.product_name}, {self.opinions}, {self.opinions_count}, {self.pros_count}, {self.cons_count}, {self.average_score}')
+
+    def __repr__(self):
+        return(f'{self.product_id}, {self.product_name}, {self.opinions}, {self.opinions_count}, {self.pros_count}, {self.cons_count}, {self.average_score}')
+
+    def to_dict(self):
+        return {
+            "self.product_id":self.product_id,
+            "self.product_name":self.product_name,
+            "self.opinions":self.opinions,
+            "self.opinions_count":self.opinions_count,
+            "self.pros_count":self.pros_count,
+            "self.cons_count":self.cons_count,
+            "self.average_score":self.average_score
+        }
 
     def extract_product(self):
         url = f"https://www.ceneo.pl/{self.product_id}#tab=reviews"

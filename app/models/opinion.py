@@ -14,10 +14,11 @@ class Opinion:
         self.publish_date = purchase_date
 
     def __str__(self):
-        pass
+        return(f'{self.product_id}, {self.product_name}, {self.opinions}, {self.opinions_count}, {self.pros_count}, {self.cons_count}, {self.average_score}')
+
 
     def __repr__(self):
-        pass
+        return(f'{self.product_id}, {self.product_name}, {self.opinions}, {self.opinions_count}, {self.pros_count}, {self.cons_count}, {self.average_score}')
 
     def to_dict(self):
         return {
@@ -27,7 +28,6 @@ class Opinion:
             "pros": self.pros,
             "cons": self.cons,
             "usefull": self.usefull,
-            "useless": self.useless,
             "publish_date": self.publish_date,
             "purchase_date": self.purchase_date
         }
